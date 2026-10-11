@@ -7,7 +7,7 @@ const Menucard = ({menuData}) => {
   <section className='main-card--container'>
     {menuData.map((currElem) => {
 
-      const {id, name, category, description, image} = currElem;
+      const {id, name, description, image} = currElem;
         return (
           <>
            <div className='card-container' key={id}>

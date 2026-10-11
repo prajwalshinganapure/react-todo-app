@@ -1,3 +1,4 @@
+```gitignore
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -10,14 +11,24 @@
 
 # production
 /build
+/dist
+
+# environment variables - do not upload secrets to GitHub
+.env
+.env.*
+!.env.example
 
 # misc
 .DS_Store
+
+# local environment files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+```

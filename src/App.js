@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Restaurent from "./component/basics/Restaurent";
+// import Count from './component/basics/Hooks/useState';
+//import Useeffect from './component/basics/Hooks/useEffect';
+//import UseReducer from './component/basics/Hooks/useReducer'
+import Todo from "./component/basics/Todoo/Todo.js";
+//import MenuApi from './component/basics/MenuApi'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Todo />
+    <Restaurent />
+    </>
+  )
 }
 
-export default App;
+export default App

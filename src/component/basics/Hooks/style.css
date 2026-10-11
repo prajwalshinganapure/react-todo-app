@@ -1,0 +1,185 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.main-div{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.child-div{
+    width:400px;
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.child-div figure img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.child-div figcaption{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:20px;
+    color:#333;
+}
+
+.add-items{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.form-control{
+    width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#eff3fa;
+}
+
+.add-btn{
+    width:45px;
+    height:45px;
+    
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-size:20px;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    background:#b3cb86;
+    
+}
+
+.show-items{
+    margin-top:10px;
+}
+
+.each-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f4f4f4;
+    padding:12px 15px;
+    border-radius:8px;
+    margin-bottom:12px;
+    transition:.3s;
+}
+
+.each-item:hover{
+    background:#e8f0ff;
+}
+
+.each-item h3{
+    font-size:17px;
+    color:#333;
+    word-break:break-word;
+}
+
+.todo-btn i{
+    font-size:18px;
+    margin-left:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.fa-pen-to-square{
+    color:#b1b6be;
+}
+
+.fa-trash{
+    color:#ff3b3b;
+}
+
+.todo-btn i:hover{
+    transform:scale(1.2);
+}
+
+.show-item{
+    margin-top:25px;
+}
+
+/* Animated Button */
+
+.effect04{
+    position:relative;
+    display:inline-block;
+    width:180px;
+    height:50px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    overflow:hidden;
+    border-radius:8px;
+    background:#515f7a;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.effect04 span{
+    position:absolute;
+    width:100%;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    transition:.4s;
+}
+
+.effect04::after{
+    content:attr(data-sm-link-text);
+    position:absolute;
+    width:100%;
+    left:0;
+    top:150%;
+    transition:.4s;
+    color:#fff;
+    font-weight:600;
+}
+
+.effect04:hover{
+    background:#ff3b3b;
+}
+
+.effect04:hover span{
+    top:-50%;
+}
+
+.effect04:hover::after{
+    top:50%;
+    transform:translateY(-50%);
+}

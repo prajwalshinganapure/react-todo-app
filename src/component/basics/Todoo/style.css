@@ -1,0 +1,208 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(270deg, #b9d7ec, #4fdcf4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-div{
+    width: 380px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.child-div figure{
+    margin-bottom: 20px;
+}
+
+.child-div img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.child-div figcaption{
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.add-items {
+  position: relative;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  height: 45px;
+  padding: 0 50px 0 15px; /* space for icon on right */
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+}
+
+.add-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6c63ff;
+  font-size: 20px;
+}
+
+.add-btn:hover {
+  background: #5648e5;
+}
+
+/* Edit & Delete buttons */
+.todo-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.todo-btn i {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Edit button */
+.todo-btn .fa-pen-to-square {
+    color: #3498db;
+}
+
+.todo-btn .fa-pen-to-square:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Delete button */
+.todo-btn .fa-trash {
+    color: #e74c3c;
+}
+
+.todo-btn .fa-trash:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* =========================
+   SHOW ITEMS
+========================= */
+
+.show-items {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* Each Todo item */
+.each-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #ffffff;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.each-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Todo text */
+.each-item h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+
+    word-break: break-word;
+}
+
+/* Edit & Delete buttons */
+.todo-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.todo-btn i {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Edit */
+.todo-btn .fa-pen-to-square {
+    color: #3498db;
+}
+
+.todo-btn .fa-pen-to-square:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* Delete */
+.todo-btn .fa-trash {
+    color: #e74c3c;
+}
+
+.todo-btn .fa-trash:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+
+/* =========================
+   CHECK LIST / REMOVE ALL
+========================= */
+
+.show-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.show-item button {
+    cursor: pointer;
+}

@@ -9,7 +9,7 @@ const Menucard = ({menuData}) => {
 
       const {id, name, description, image} = currElem;
         return (
-          <>
+          
            <div className='card-container' key={id}>
         <div className='card'>
             <div className='card-body'>
@@ -26,7 +26,7 @@ const Menucard = ({menuData}) => {
                 <span className="card-tag subtle">Order Now</span>
             </div>
         </div>
-        </>
+        
         )
       })
     }
